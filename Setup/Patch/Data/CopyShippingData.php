@@ -80,7 +80,7 @@ class CopyShippingData implements DataPatchInterface, PatchRevertableInterface
 
         foreach ($dataToUpdate as $configRow) {
             $configRow['path'] = str_replace('wexo_flatrate', 'salecto_flatrate', $configRow['path']);
-            $configRow['value'] = str_replace('Wexo', 'Salecto', $configRow['value']);
+            $configRow['value'] = isset($configRow['value']) ? str_ireplace('Wexo', 'Salecto', $configRow['value']) : null;
             $connection->update($configTableName, $configRow, ['config_id = ?' => $configRow['config_id']]);
         }
         
