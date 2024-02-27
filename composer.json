@@ -1,5 +1,5 @@
 {
-  "name": "salecto2/magento2-shipping",
+  "name": "bhoopatparmar/magento2-shipping",
   "description": "Salecto Shipping Module that supports GLS, shipmondo and PostNord",
   "type": "magento2-module",
   "version": "1.0.0",
@@ -20,5 +20,11 @@
     "psr-4": {
       "Salecto\\Shipping\\": ""
     }
-  }
+  },
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/bhoopatparmar/magento2-shipping.git"
+		}
+	]
 }
