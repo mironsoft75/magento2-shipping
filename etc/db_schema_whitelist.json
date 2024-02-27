@@ -1,0 +1,34 @@
+{
+    "salecto_shipping_rate": {
+        "column": {
+            "entity_id": true,
+            "carrier_type": true,
+            "method_type": true,
+            "conditions_serialized": true,
+            "store_id": true,
+            "customer_groups": true,
+            "is_active": true,
+            "allow_free": true,
+            "sort_order": true,
+            "title": true,
+            "price": true
+        },
+        "index": {
+            "SALECTO_SHIPPING_RATE_IS_ACTIVE_SORT_ORDER": true,
+            "SALECTO_SHIPPING_RATE_CARRIER_TYPE": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "sales_order": {
+        "column": {
+            "salecto_shipping_data": true
+        }
+    },
+    "quote": {
+        "column": {
+            "salecto_shipping_data": true
+        }
+    }
+}
