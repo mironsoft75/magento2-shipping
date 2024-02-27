@@ -22,11 +22,5 @@
     "psr-4": {
       "Salecto\\Shipping\\": ""
     }
-  },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/bhoopatparmar/magento2-shipping.git"
-    }
-  ]
+  }
 }
